@@ -3,7 +3,7 @@ from sqlalchemy.orm import Session
 
 from databases.nexus_db import get_db
 from services.services import get_orgs_by_build, get_orgs_by_activity, get_org_by_id, get_org_by_activities_tree, \
-    get_org_by_name, add_activity
+    get_org_by_name
 
 router = APIRouter()
 

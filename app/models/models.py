@@ -1,7 +1,7 @@
 from sqlalchemy import String, DECIMAL, ForeignKey
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from core import Base
+from databases.nexus_db import Base
 
 
 class OrganizationsOrm(Base):

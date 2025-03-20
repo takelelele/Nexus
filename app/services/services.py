@@ -82,7 +82,6 @@ def get_nesting_level(parent_id, db: Session):
 
 
 async def add_activity(name, parent_id, db: Session):
-
     if get_nesting_level(parent_id, db) >= 2:
         return "Невозможно создать деятельность с уровнем вложенности более 3"
 

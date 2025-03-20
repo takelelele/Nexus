@@ -1,9 +1,8 @@
 FROM python:3.10-slim
 
-RUN apt-get update && apt-get install -y --no-install-recommends curl build-essential libpq-dev \
-    && rm -rf /var/lib/apt/lists/*
-RUN curl -sSL https://install.python-poetry.org | python3 -
-ENV PATH="/root/.local/bin:${PATH}"
+RUN apt-get update && apt-get install -y --no-install-recommends postgresql libpq-dev build-essential
+RUN pip install poetry
+RUN rm -rf /var/lib/apt/lists/*
 
 WORKDIR /nexus
 
