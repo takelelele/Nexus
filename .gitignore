@@ -175,5 +175,3 @@ cython_debug/
 /.idea
 /app/tests
 app/test.db
-app/migrations/README
-app/migrations/script.py.mako
