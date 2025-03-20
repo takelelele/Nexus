@@ -19,9 +19,9 @@ services:
       - "8000:8000"
     networks:
       - nexus_network
-    command: sh -c "poetry run alembic upgrade head \           # Загружаем актуальные миграции
-              && psql -f initdb.sql \                           # Загружаем тестовые данные
-              && poetry run python main.py"                     # Запускаем сервер
+    command: sh -c "poetry run alembic upgrade head \           
+              && psql -f initdb.sql \                           
+              && poetry run python main.py"
 
 
 networks:
