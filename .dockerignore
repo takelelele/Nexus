@@ -1,0 +1,13 @@
+app/test.db
+app/tests/
+app/__pycache__/
+
+
+.pytest_cache/
+.git/
+.idea/
+.gitignore
+.dockerignore
+Dockerfile
+docker-compose.yml
+README.md
