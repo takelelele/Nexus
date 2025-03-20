@@ -173,6 +173,7 @@ cython_debug/
 # PyPI configuration file
 .pypirc
 /.idea
-/app/migrations
 /app/tests
 app/test.db
+app/migrations/README
+app/migrations/script.py.mako
